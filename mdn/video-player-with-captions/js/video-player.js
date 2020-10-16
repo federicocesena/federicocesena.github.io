@@ -143,11 +143,13 @@
 				else video.pause();
 			});	
 
-			// Turn off all subtitles
-			for (var i = 0; i < video.textTracks.length; i++) {
+			// Turn off all subtitles.
+			for (var i = 1; i < video.textTracks.length; i++) {
 				video.textTracks[i].mode = 'hidden';
 			}
+			video.textTracks[0].mode = 'showing';
 
+			var defaultLang = 'it';
 			// Creates and returns a menu item for the subtitles language menu
 			var subtitleMenuButtons = [];
 			var createMenuItem = function(id, lang, label) {
