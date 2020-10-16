@@ -38,7 +38,7 @@ figure {
 	margin:1.25rem auto;
 	padding:20px;
 	padding:1.051%;
-	background-color:#ccc;
+	background-color:#eeeeee;
 }
 figcaption {
 	display:block;
@@ -213,7 +213,7 @@ html:-ms-fullscreen {
 	background-color:transparent;
 }
 video:-webkit-full-screen + .controls {
-	background:#ccc; /* required for Chrome which doesn't heed the transparent value set above */
+	background:#eeeeee; /* required for Chrome which doesn't heed the transparent value set above */
 }
 video:-webkit-full-screen + .controls progress {
 	margin-top:0.5rem;
